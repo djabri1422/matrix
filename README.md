@@ -7,8 +7,8 @@ matrix methods:
 - [x] columns
 - [x] default constructor
 - [x] constructor with params
-- [ ] destructor
-- [ ] fill
-- [ ] print
-- [ ] operator +
-- [ ] operator *
+- [x] destructor
+- [x] fill
+- [x] print
+- [x] operator +
+- [x] operator *
