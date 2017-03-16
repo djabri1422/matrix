@@ -1,13 +1,25 @@
 #include <iostream>
+#include <fstream>
+#include <string>
+	
 
-class matrix_t final
-{
+using namespace std;
+
+class tmatrix{
 private:
-    unsigned int rows_;
-    unsigned int columns_;
-    int** elements_;
+	int count_1,count_2;
+	int **array;
 public:
-    matrix_t() noexcept;
-    auto rows() -> unsigned int;
-    auto columns() -> unsigned int;
+	tmatrix();
+	tmatrix(int,int);
+	tmatrix(tmatrix&);
+	void print();
+	void fill(string);
+	tmatrix operator+(tmatrix);
+	tmatrix operator*(tmatrix);
+	tmatrix operator == (tmatrix&)const;
+	tmatrix operator = (const tmatrix&);
+	friend ostream& operator << (ostream&,tmatrix&);
+	friend istream& operator >>(istream&,tmatrix&);
+	~tmatrix();
 };
