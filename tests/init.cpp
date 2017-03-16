@@ -12,6 +12,6 @@ SCENARIO("matrix init", "[init]") {
 	REQUIRE(vector.size()==0);
 	REQUIRE(vector.capacity() ==0);
 	for(int i=0;i<vector.size();i++){
-		REQUIRE(matrix[i]==0)
+		REQUIRE(matrix[i][j]==0)
 	}
 }
