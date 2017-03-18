@@ -3,7 +3,7 @@
                                     
 SCENARIO("tmatrix init", "[init]") {
 	tmatrix matrix;
-	REQUIRE(matrix.count_1() == 0);
-	REQUIRE(matrix.count_2() == 0);
+	REQUIRE(matrix.rows() == 0);
+	REQUIRE(matrix.columns() == 0);
 }
 
