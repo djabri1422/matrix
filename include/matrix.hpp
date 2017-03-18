@@ -10,6 +10,8 @@ private:
 	int count_1,count_2;
 	int **array;
 public:
+	int rows();
+	int columns();
 	tmatrix();
 	tmatrix(int,int);
 	tmatrix(tmatrix&);
