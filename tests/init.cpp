@@ -9,7 +9,7 @@ SCENARIO("tmatrix init", "[init]") {
 
 SCENARIO("params init", "[params init]") {
 	int init = 5;
-	Matrix matrix(init, init);
+	tmatrix matrix(init, init);
 	REQUIRE(matrix.rows() == 5);
 	REQUIRE(matrix.columns() == 5);
 }
