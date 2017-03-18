@@ -4,11 +4,11 @@ tmatrix::tmatrix(){
 	count_2=0;
 }
 int tmatrix::rows(){
-	return n;
+	return count_1;
 }
 
 int tmatrix::columns(){
-	return m;
+	return count_2;
 }
 istream& operator >>(istream&b,tmatrix& num){
 	cout<<"Введте кол-во строк:";
