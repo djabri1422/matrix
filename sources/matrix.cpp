@@ -1,8 +1,10 @@
 #include "matrix.hpp"
-tmatrix::tmatrix(){
-	count_1=0;
-	count_2=0;
+
+tmatrix::tmatrix() : count_1(0), count_2(0), array{nullptr}
+{
+	
 }
+
 int tmatrix::rows(){
 	return count_1;
 }
