@@ -62,17 +62,13 @@ tmatrix tmatrix::operator == (tmatrix &MatrixCopy)const{
 	return re;
 }
 
-tmatrix::tmatrix(int xSize, int ySize)
+tMatrix::Matrix(int xSize, int ySize)
 {
-	array = new int *[ySize];
-	for (int count = 0; count < ySize; count++)
-		array[count] = new int[xSize];
-	count_1 = xSize;
-	count_2 = ySize;
-	for (int i = 0; i < count_1; i++){
-		for (int j = 0; j < count_2; j++){
-		array[i][j] = 0;
-		}
+	count_1=xSize;
+	count_2=ySize;
+	array= new int *[xSize];
+	for (int i = 0; i < xSize; i++){
+		array[i] = new int[ySize];
 	}
 }
 
