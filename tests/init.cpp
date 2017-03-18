@@ -2,7 +2,7 @@
 #include <catch.hpp>
                                     
 SCENARIO("matrix init", "[init]") {
-	matrix_t matrix;
+	tmatrix matrix;
 	REQUIRE(matrix.count_1() == 0);
 	REQUIRE(matrix.count_2() == 0);
 }
