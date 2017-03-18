@@ -3,7 +3,13 @@ tmatrix::tmatrix(){
 	count_1=0;
 	count_2=0;
 }
+int tmatrix::rows(){
+	return n;
+}
 
+int tmatrix::columns(){
+	return m;
+}
 istream& operator >>(istream&b,tmatrix& num){
 	cout<<"Введте кол-во строк:";
 	cin>>num.count_1;
