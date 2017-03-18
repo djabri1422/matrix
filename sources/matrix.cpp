@@ -62,7 +62,7 @@ tmatrix tmatrix::operator == (tmatrix &MatrixCopy)const{
 	return re;
 }
 
-tMatrix::Matrix(int xSize, int ySize)
+tMatrix::tmatrix(int xSize, int ySize)
 {
 	count_1=xSize;
 	count_2=ySize;
