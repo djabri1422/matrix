@@ -15,7 +15,7 @@ SCENARIO("params init", "[params init]") {
 }
 SCENARIO("sum init","[sum init]")
 {
-	matrix_t a, b, e;
+	tmatrix a, b, e;
 	std::ifstream("A.txt") >> a;
 	std::ifstream("B.txt") >> b;
 	std::ifstream("A+B.txt") >> e;
