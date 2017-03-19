@@ -102,13 +102,18 @@ void tmatrix::print(){
 }
 
 tmatrix tmatrix::operator+(tmatrix count){
+	if (count_1!=count.count_1 || count_2!=count.count_2 )
+	{
+		system("pause");
+		exit(1);
+	}else{
 	tmatrix overload(count_1,count_2);
 	for(int i=0;i<count_1;i++){
-		for(int j=0;j<count_2;j++){
+		for(int j=0;j<count_2;j++)
 			overload.array[i][j]=array[i][j] + count.array[i][j];
-		}
 	}
 	return overload;
+	}	
 }
 
 tmatrix tmatrix::operator*(tmatrix count){
