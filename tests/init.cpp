@@ -13,13 +13,6 @@ SCENARIO("params init", "[params init]") {
 	REQUIRE(matrix.rows() == 5);
 	REQUIRE(matrix.columns() == 5);
 }
-SCENARIO("sum init","[sum init]"){
-	tmatrix overload(0,0);
-	count_1!=0;
-	count_2!=0;
-	for(int i=0;i<count_2;i++)
-	REQUIRE(overload.array[0][0]==array[0][0]);
-}
 
 SCENARIO("sum init","[sum init]")
 {
