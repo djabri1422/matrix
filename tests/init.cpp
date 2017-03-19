@@ -13,3 +13,11 @@ SCENARIO("params init", "[params init]") {
 	REQUIRE(matrix.rows() == 5);
 	REQUIRE(matrix.columns() == 5);
 }
+
+SCENARIO("matrix sum","[inti]"){
+	tmatrix a, b, e;
+	std::ifstream("A.txt") >> a;
+	std::ifstream("B.txt") >> b;z
+	std::ifstream("A+B.txt") >> e;
+	REQUIRE(a+b == e);
+}
