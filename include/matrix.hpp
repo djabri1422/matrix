@@ -17,7 +17,7 @@ public:
 	tmatrix(tmatrix&);
 	void print();
 	void fill(string);
-	tmatrix operator+(tmatrix);
+	tmatrix operator+(const tmatrix&)const;
 	tmatrix operator*(tmatrix);
 	tmatrix operator == (tmatrix&)const;
 	tmatrix operator = (const tmatrix&);
