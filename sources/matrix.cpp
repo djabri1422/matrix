@@ -101,7 +101,7 @@ void tmatrix::print(){
 	cout<<"\n";
 }
 
-tmatrix tmatrix::operator+(tmatrix count){
+tmatrix tmatrix::operator+(const tmatrix &count)const {
 	if (count_1!=count.count_1 || count_2!=count.count_2 )
 	{
 		system("pause");
