@@ -17,7 +17,7 @@ SCENARIO("params init", "[params init]") {
 SCENARIO("matrix sum","[inti]"){
 	tmatrix a, b, e;
 	std::ifstream("A.txt") >> a;
-	std::ifstream("B.txt") >> b;z
+	std::ifstream("B.txt") >> b;
 	std::ifstream("A+B.txt") >> e;
 	REQUIRE(a+b == e);
 }
